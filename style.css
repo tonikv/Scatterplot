@@ -1,0 +1,102 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --beau-blue: #c1cfdaff;
+    --carolina-blue: #20a4f3ff;
+    --turquoise-blue: #59f8e8ff;
+    --crimson-ua: #941c2fff;
+    --rich-black-fogra-29: #03191eff;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--rich-black-fogra-29);
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    background: var(--beau-blue);
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px 2px var(--beau-blue);
+}
+
+#overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#tooltip {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200;
+    min-height: 200;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+    pointer-events: none;
+    z-index: 100;
+}
+
+#title {
+    font-size: xx-large;
+    text-align: center;
+    color: var(--rich-black-fogra-29);
+}
+
+.titlesmall {
+    font-size: 0.5em;
+}
+
+.tick {
+    color: var(--rich-black-fogra-29);
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.9em;
+}
+
+
+.dot {
+    stroke: var(--rich-black-fogra-29);
+    stroke-width: 1.0px;
+    fill: var(--crimson-ua);
+    cursor: pointer;
+}
+
+
+#legend {
+    position: absolute;
+    color: black;
+    border: 2px solid red;
+}
+
+.legend-label {
+    position: absolute;
+    color: black;
+    border: 2px solid red;
+}
+
+.nodoping {
+    stroke: var(--rich-black-fogra-29);
+    stroke-width: 1.5px;
+    fill: var(--carolina-blue);
+}
+
+.doping {
+    stroke: var(--rich-black-fogra-29);
+    stroke-width: 1.5px;
+    fill: var(--crimson-ua); 
+}
