@@ -10,13 +10,16 @@
     --rich-black-fogra-29: #03191eff;
 }
 
+body {
+    background: var(--rich-black-fogra-29);
+}
+
 .main {
     width: 100vw;
     height: 100vh;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: var(--rich-black-fogra-29);
     font-family: 'Roboto Slab', serif;
 }
 
